@@ -1,5 +1,4 @@
 var url = "https://api.adviceslip.com/advice";
-var bodyTranslate = "";
 
 // API - CONSELHOS
 fetch(url)
@@ -7,6 +6,10 @@ fetch(url)
     return response.json();
   })
   .then((corpo) => {
-    // console.log(corpo.slip.advice);
-    document.getElementById("message").innerHTML = corpo.slip.advice;
+    console.log(corpo.slip);
+    document.getElementById("id-message").innerHTML = 'ADVICE #';
+    document.getElementById("id-message").innerHTML += corpo.slip.id;
+    document.getElementById("text-message").innerHTML += '"';
+    document.getElementById("text-message").innerHTML += corpo.slip.advice;
+    document.getElementById("text-message").innerHTML += '"';
   });
