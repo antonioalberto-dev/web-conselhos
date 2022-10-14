@@ -31,7 +31,7 @@ body {
 
 .card {
   background-color: var(--dark-grayish-blue);
-  width: 400px;
+  width: 60%;
   padding: 20px;
 
   border-radius: 10px;
@@ -63,9 +63,9 @@ body {
 }
 
 .card img {
-  margin: 25px 0;
+  margin: 20px 0;
 
-  width: 350px;
+  width: 90%;
 }
 
 .btn-reload {
@@ -82,6 +82,7 @@ body {
 
   position: relative;
   bottom: 20px;
+  cursor: pointer;
 }
 
 .btn-reload img {
